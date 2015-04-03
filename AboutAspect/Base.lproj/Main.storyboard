@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vbO-e6-cyv">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eSH-MK-YZy">
+                                <rect key="frame" x="66" y="141" width="191" height="191"/>
+                                <color key="backgroundColor" red="0.10980392160000001" green="0.66666666669999997" blue="0.20000000000000001" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="eSH-MK-YZy" secondAttribute="height" multiplier="1:1" id="Oqp-Mo-Xwy"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9zc-bh-9gP">
+                                <rect key="frame" x="343" y="141" width="191" height="191"/>
+                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9zc-bh-9gP" secondAttribute="height" multiplier="1:1" id="rHO-4T-qV9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eSH-MK-YZy" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="50" id="II0-uc-V0F"/>
+                            <constraint firstItem="eSH-MK-YZy" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="77" id="SY6-tt-QWL"/>
+                            <constraint firstItem="eSH-MK-YZy" firstAttribute="top" secondItem="9zc-bh-9gP" secondAttribute="top" id="VVh-0Y-Z3y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9zc-bh-9gP" secondAttribute="trailing" constant="50" id="fbW-zL-rzZ"/>
+                            <constraint firstItem="eSH-MK-YZy" firstAttribute="centerY" secondItem="9zc-bh-9gP" secondAttribute="centerY" id="gxY-VR-bAw"/>
+                            <constraint firstItem="9zc-bh-9gP" firstAttribute="leading" secondItem="eSH-MK-YZy" secondAttribute="trailing" constant="86" id="slG-xe-qLu"/>
+                            <constraint firstItem="9zc-bh-9gP" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="77" id="uYr-ty-0Dq"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="qGC-E6-Z8v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1009" y="-248"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7SO-DP-XNp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vbO-e6-cyv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xqp-VD-M6c">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="ybg-41-lmn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sNh-pN-L1R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="322" y="-380"/>
+        </scene>
+    </scenes>
+</document>
